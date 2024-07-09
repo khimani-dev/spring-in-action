@@ -14,8 +14,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(HomeController.class)//WebTest for HomeController
 public class HomeControllerTest {
     @Autowired
-    private MockMvc mockMvc;//Injects MockMvc
-
+    private MockMvc mockMvc; //Injects MockMvc which assists in testing the controllers
     public void testHomePage() throws Exception {
         mockMvc.perform(get("/")) //performs GET http Request
                 .andExpect(status().isOk()) //expects HTTP 200

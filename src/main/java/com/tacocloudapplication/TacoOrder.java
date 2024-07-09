@@ -12,12 +12,12 @@ public class TacoOrder {
     private String deliveryCity;
     private String deliveryState;
     private String deliveryZip;
-    private String ccCCV;
+    private String ccCVV;
     private String ccNumber;
     private String ccExpiration;
 
-    private List<Taco> tacos=new ArrayList<>(); //method for easier addition of tacos
-    public void addTaco(Taco taco) {
+    private List<Taco> tacos=new ArrayList<>(); //avoids hard-coding gives the flexibility of controlling the no. of tacos
+    public void addTaco(Taco taco) {  //method for easier addition of tacos
         this.tacos.add(taco);
     }
 }
