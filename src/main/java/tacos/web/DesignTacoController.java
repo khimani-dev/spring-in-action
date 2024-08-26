@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 public class DesignTacoController {
 
 @ModelAttribute
-    public void addIngredientsToModel(Model model) {
+    public void addIngredientsToModel(Model model) { //the method creates a new taco-order and taco object
         List<Ingredient> ingredients = Arrays.asList(
                 new Ingredient("FLTO", "Flour Tortilla", Ingredient.Type.WRAP),
                 new Ingredient("COTO", "Corn Tortilla", Ingredient.Type.WRAP),
